@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        //Qa1. Get user to input a number using prompt(“Enter a number:”). Check if the number is a multiple of 5 or not.
+        a = prompt("Enter number : ")
+        if (a % 5 == 0) {
+            alert("Yes divisble by 5")
+        }
+        else {
+            alert("No not divisible by 5")
+        }
+
+        //Qs2. Write a code which can give grades to students according to their scores:
+        // 80-100, A
+        // 70-79, B
+        // 60-69, C
+        // 50-59, D
+        // 0-49, F
+        n = prompt("Enter marks : ")
+        if (n >= 80 && n <= 100) {
+            alert("Grade : A")
+        }
+        else if (n >= 70 && n <= 79) {
+            alert("Grade : B")
+        }
+        else if (n >= 60 && n <= 69) {
+            alert("Grade : C")
+        } else if (n >= 50 && n <= 59) {
+            alert("Grade : D")
+        }
+        else if (n >= 0 && n <= 49) {
+            alert("Grade : F")
+        }
+        else {
+            alert("Enter valid marks")
+        }
+    </script>
+</body>
+
+</html>
