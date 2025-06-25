@@ -11,14 +11,15 @@
 // let str = "Onkar"
 // first(str)
 
-function second (e=>{
-    let count = 0
+const countVowels = (str) => {
+    let count = 0;
     for (let char of str) {
         if ('aeiouAEIOU'.includes(char)) {
-            count++
+            count++;
         }
     }
-    console.log(count)
-})
- let str = "Onkar"
-seconde(str)
+    return count;
+};
+
+let str = "Onkar";
+console.log(countVowels(str)); // Output: 2
